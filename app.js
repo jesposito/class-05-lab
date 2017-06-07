@@ -47,7 +47,13 @@ Fourth element: "The product of 4 and 7 and 5 is 140."
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-
+function sumAndMultiply(num1, num2, num3) {
+  sum = num1 + num2 + num3;
+  multiply = num1 * num2 * num3;
+  and = ' and ';
+  sumAndMultiplyArray = [sum,multiply,num1 + and + num2 + and + num3 + ' sum to ' + sum + '.','The product of ' + num1 + and + num2 + and + num3 + ' is ' + multiply + '.'];
+  return sumAndMultiplyArray;
+}
 // Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4,7,5);
 
