@@ -7,6 +7,11 @@ Write a function called sum() that takes in two numbers as arguments and then re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
 // Write your code here
+function sum(sum1, sum2) {
+  sum3 = sum1 + sum2;
+  sumArray = [sum3,'The sum of ' + sum1 + ' and ' + sum2 + ' is ' + sum3 + '.'];
+  return sumArray;
+}
 
 // Here is the test for sum(); uncomment it to run it
 testSum(4, 7);
