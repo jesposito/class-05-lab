@@ -68,6 +68,16 @@ Write a function called sumArray() that takes in an array of numbers as its argu
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // Write your code here
+function sumArray(testArray) {
+  var join = testArray.join();
+  var sum = 0;
+  for (var i = 0; i < testArray.length; i++) {
+    sum += Number(testArray[i]);
+  }
+  sumPackage = [sum,join + ', was passed in as an array of numbers, and ' + sum + ' is their sum.'];
+  return sumPackage;
+}
+
 testArray = [2,3,4];
 
 // Here is the test for sumArray(); uncomment it to run it
