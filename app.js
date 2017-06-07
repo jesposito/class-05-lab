@@ -94,7 +94,15 @@ Write a function called multiplyArray() that takes an array of numbers as its ar
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-
+function multiplyArray(testArray) {
+  var join = testArray.join();
+  var product = 1;
+  for (var i = 0; i < testArray.length; i++) {
+    product *= Number(testArray[i]);
+  }
+  multiplyPackage = [product,'The numbers ' + join + ' have a product of ' + product + '.'];
+  return multiplyPackage;
+}
 // Here is the test for multiplyArray(); uncomment it to run it
 testMultiplyArray(testArray);
 
