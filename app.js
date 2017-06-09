@@ -68,14 +68,14 @@ Write a function called sumArray() that takes in an array of numbers as its argu
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // Write your code here
-function sumArray(testArray) {
+function sumArray1(testArray) {
   var join = testArray.join();
   var sum = 0;
   for (var i = 0; i < testArray.length; i++) {
     sum += Number(testArray[i]);
   }
-  sumPackage = [sum,join + ', was passed in as an array of numbers, and ' + sum + ' is their sum.'];
-  return sumPackage;
+  var sumArrayPkg = [sum,join + ' was passed in as an array of numbers, and ' + sum + ' is their sum.'];
+  return sumArrayPkg;
 }
 
 testArray = [2,3,4];
@@ -94,7 +94,7 @@ Write a function called multiplyArray() that takes an array of numbers as its ar
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(testArray) {
+function multiplyArray1(testArray) {
   var join = testArray.join();
   var product = 1;
   for (var i = 0; i < testArray.length; i++) {
@@ -144,17 +144,17 @@ function testSumAndMultiply() {
 }
 
 function testSumArray() {
-  if (sumArray(testArray)[1] === '2,3,4 was passed in as an array of numbers, and 9 is their sum.') {
-    console.log('%c TEST FOR sumArray() PASSES', 'color: green');
+  if (sumArray1(testArray)[1] === '2,3,4 was passed in as an array of numbers, and 9 is their sum.') {
+    console.log('%c TEST FOR sumArray1() PASSES', 'color: green');
   } else {
-    console.log('%c TEST FOR sumArray() FAILS', 'color: red');
+    console.log('%c TEST FOR sumArray1() FAILS', 'color: red');
   }
 }
 
 function testMultiplyArray() {
-  if (multiplyArray(testArray)[1] === 'The numbers 2,3,4 have a product of 24.') {
-    console.log('%c TEST FOR multiplyArray() PASSES', 'color: green');
+  if (multiplyArray1(testArray)[1] === 'The numbers 2,3,4 have a product of 24.') {
+    console.log('%c TEST FOR multiplyArray1() PASSES', 'color: green');
   } else {
-    console.log('%c TEST FOR multiplyArray() FAILS', 'color: red');
+    console.log('%c TEST FOR multiplyArray1() FAILS', 'color: red');
   }
 }
